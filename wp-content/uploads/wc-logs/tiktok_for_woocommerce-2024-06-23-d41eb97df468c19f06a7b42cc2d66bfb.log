@@ -1,0 +1,32 @@
+2024-06-23T11:16:08+00:00 DEBUG POST: https://ads.tiktok.com/marketing_api/api/developer/app/create_auto_approve/
+
+{"business_platform":"PROD","smb_id":"tt4b_woocommerce_667803f89a4a5httpplanty-websitelocalwp-admin","smb_name":"PROD","redirect_url":"http:\/\/planty-website.local\/wp-admin\/"}
+ ajax: no
+2024-06-23T11:16:09+00:00 DEBUG Tt4b_Mapi_Class::create_open_source_app: Response: 
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Tt-Logid: 20240623111608589BA6E2DDB86857707D,20240623111608589BA6E2DDB86857707D
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+x-tt-trace-host: 01404d14b0da8da9441544e0e112ece55b892703fd01bafb0b9a1f52b7c2cc8847551fdaf136306d9018c8b26573394221f066ce00c4256cca08c011e0379f90c06966502d9bbcacf7be3ad81978d1e7273c0d87bf5d27ab0cf86b40f341fe423050e658d441208febf978cca1bfbb11e3810d118b5856e3ceb13d9d26913fd5d0
+x-tt-trace-id: 00-240623111608589BA6E2DDB86857707D-4082DFAF0D9CA95C-00
+Server: TLB
+Content-Encoding: gzip
+Content-Length: 208
+X-Origin-Response-Time: 179,23.44.4.87
+X-Akamai-Request-ID: 28847dd7.2f344520.3b7f5f5c
+X-Parent-Response-Time: 221,23.11.215.108
+Date: Sun, 23 Jun 2024 11:16:09 GMT
+X-Cache: TCP_MISS from a104-115-83-101.deploy.akamaitechnologies.com (AkamaiGHost/11.5.2-56372494) (-)
+Connection: close
+Vary: Accept-Encoding
+X-Cache-Remote: TCP_MISS from a23-11-215-108.deploy.akamaitechnologies.com (AkamaiGHost/11.5.2-56372494) (-)
+x-tt-trace-tag: id=16;cdn-cache=miss;type=dyn
+Server-Timing: cdn-cache; desc=MISS, edge; dur=227, origin; dur=179
+Server-Timing: inner; dur=172
+X-Parent-Response-Time: 401,104.115.83.101
+
+{"code":0,"msg":"ok","data":{"app_secret":"0376569268a90b494512eee0767c25fa72242355","redirect_uri":"http:\/\/planty-website.local\/wp-admin\/","external_data_key":"7ed453fd-56d0-4da0-8183-c940b5ed6da8","app_id":"7383655959010213889"}}
+
+2024-06-23T12:27:36+00:00 DEBUG Tt4b_Pixel_Class::inject_view_content_event: hit ViewContent
+2024-06-23T12:27:36+00:00 DEBUG Tt4b_Pixel_Class::inject_view_content_event: Missing option "access_token"

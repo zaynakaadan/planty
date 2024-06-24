@@ -1,0 +1,149 @@
+/* Import de la police Syne depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap');
+
+/* Réinitialisation des styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Syne', sans-serif; /* Utilisation de la police Syne pour tout le texte */    
+    color: white; /* Couleur de texte par défaut */
+    line-height: 1.6; /* Espacement des lignes */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif; /* Utilisation de la police Syne pour les titres */
+    font-weight: 600; /* Poids de la police pour les titres */
+    color: white;
+}
+
+.commander-background {
+    width: 100%;
+    background-color: #3b8e46;
+    padding: 20px 0;
+}
+
+.commander-container {
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3b8e46;
+}
+
+.command-title {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: white;
+}
+
+.command-separator {
+    height: 2px; 
+    background-color: white; 
+    margin: 20px 0; /* Espacement avant et après la ligne de séparation */
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crée 4 colonnes de largeur égale */
+    gap: 20px; /* Espacement entre les produits */
+}
+
+.product {
+    text-align: center; /* Centrer le contenu des produits */
+}
+
+.product img {
+    max-width: 100%; /* Assurez-vous que les images ne dépassent pas leur conteneur */
+    height: auto;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer horizontalement les contrôles de quantité */
+    margin-top: 10px; /* Espacement entre l'image et les contrôles de quantité */
+}
+
+.quantity input[type="button"] {
+    width: 30px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.quantity input[type="number"] {
+    width: 50px;
+    height: 68px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+}
+
+.quantity-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.quantity-ok {
+    padding-left: 8px;
+    font-size: 20px;
+    max-width: 100px;
+    width: 100%;
+}
+
+.form-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-column {
+    padding: 10px;
+}
+
+.order-info,
+.delivery-info {
+    margin-top: 20px;
+}
+
+.delivery-info {
+    border-left: 2px solid white;
+    padding-left: 41px;
+}
+
+.submit-order {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles pour les étiquettes */
+.order-info label,
+.delivery-info label {
+    color: white; 
+}
+
+/* Media queries pour une mise en page responsive */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(1, 1fr); /* Passage à 1 colonnes sur écrans plus petits */
+    }
+
+    .form-columns {
+        grid-template-columns: repeat(1, 1fr); /* Passage à 1 colonnes sur écrans plus petits */
+    }
+
+    .order-info,
+    .delivery-info {
+        margin-top: 10px; /* Espacement réduit en haut */
+    }
+
+    .form-separator {
+        display: none; /* Masquer le séparateur sur les écrans plus petits */
+    }
+}
