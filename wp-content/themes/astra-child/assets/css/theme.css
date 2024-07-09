@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .quantity input[type="button"] {
     width: 30px;
-    height: 35px;
+    height: 39px;
     font-size: 20px;
     text-align: center;
     cursor: pointer;
@@ -78,8 +78,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .quantity input[type="number"] {
-    width: 50px;
-    height: 68px;
+    width: 60px;
+    height: 77px;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 10px 0 0 10px;
@@ -93,9 +93,13 @@ h1, h2, h3, h4, h5, h6 {
 .quantity-ok {
     padding-left: 8px;
     font-size: 20px;
-    max-width: 100px;
-    width: 100%;
+    max-width: 150px;
+    height: 80px;
 }
+.quantity-ok input[type="submit"] {
+    padding: 10px 20px; /* Augmente l'espacement intérieur du bouton */
+}
+
 
 .form-columns {
     display: grid;
@@ -130,6 +134,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Media queries pour une mise en page responsive */
 @media (max-width: 768px) {
+    .site-logo-img {
+        padding-left: 20px;
+    }
+    .elementor-9 .elementor-element.elementor-element-342597a .elementor-heading-title {
+        font-size: 22px;
+    }
+    .attachment-large {
+        width: 200px;
+        height: 300px;
+    }
+    
+    .elementor-heading-title {
+        font-size: 22px !important;
+    }
     .products-grid {
         grid-template-columns: repeat(1, 1fr); /* Passage à 1 colonnes sur écrans plus petits */
     }
@@ -147,3 +165,125 @@ h1, h2, h3, h4, h5, h6 {
         display: none; /* Masquer le séparateur sur les écrans plus petits */
     }
 }
+/* Style pour le lien "Admin" dans le menu */
+.navbar-nav li a[href*="wp-admin"] {
+    /* Ajoutez vos styles personnalisés ici */
+    font-weight: bold;
+    color: #ff0000; /* Exemple de couleur rouge */
+}
+
+
+/* Styles personnalisés pour l'entête */
+#masthead .ast-container {
+    padding-right: 0;
+    height: 124px;
+}
+.ast-header-button-1[data-section*="section-hb-button-"] .ast-builder-button-wrap .ast-custom-button {
+    height: 124px;
+    text-decoration: none;
+    display: flex; /* Utiliser flexbox pour centrer le bouton */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    margin: 0 auto; /* Centrer le bouton dans son conteneur parent */
+    padding: 52px;
+}
+.ast-custom-button-link{
+    text-decoration: none;
+}
+
+/* Style pour le lien "Admin" */
+a[href="http://planty-website.local/wp-admin/"] {
+    font-size: larger;
+    color: black;
+    text-decoration: none; /* Enlève la ligne en dessous du texte */
+}
+
+.elementor-button-text {
+    padding: 1px 32px;/* Augmenter l'espace intérieur du bouton à gauche et à droite */
+}
+
+.wpcf7-form-control {
+    text-align: center;
+}
+
+/* Style pour le page commander */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    position: relative;/* Position relative pour le conteneur */
+  }
+  
+  .left-column,
+  .right-column {
+    width: 40%;
+  }
+  
+  .left-column h2,
+  .right-column h2 {
+    text-align: left;
+    color: white;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .form-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: white;
+  }
+
+  .submit-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .submit-container input[type="submit"] {
+    background-color: #E0B9B4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+
+  .submit-container input[type="submit"]:hover {
+    background-color: #C02E44;
+    color: white;
+  }
+
+  .wpcf7-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #23282d;
+    opacity: 0.75;
+    width: 48px; 
+    height: 48px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 auto; /* Centrer horizontalement */
+    position: absolute; /* Utiliser une position absolue */
+    bottom: 10px; /* Positionner en bas avec un petit espace */
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Centrer correctement */
+  }
+  
+  

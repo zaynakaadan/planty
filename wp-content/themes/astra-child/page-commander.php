@@ -113,7 +113,7 @@ get_header();
 
 <?php
 // Handle form submission
-if (isset($_POST['submit_order'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_order'])) {
     $quantity_fraise = intval($_POST['quantity_fraise']);
     $quantity_pamplemousse = intval($_POST['quantity_pamplemousse']);
     $quantity_framboise = intval($_POST['quantity_framboise']);
@@ -136,7 +136,7 @@ if (isset($_POST['submit_order'])) {
     $message .= "\nLivraison à:\n$address\n$postal_code $city\n";
 
     // Send the email
-    $sent = wp_mail('planty.drinks@gmail.com', 'Nouvelle commande', $message);
+    $sent = wp_mail('dev-email@wpengine.local', 'Nouvelle commande', $message);
 
     if ($sent) {
         echo '<p>Merci pour votre commande !</p>';
